@@ -1,0 +1,12 @@
+name: Arrow Docker Builds
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+    - uses: actions/checkout@v2
+    - name: docker build csharp
+      run: |
+        docker build ./c# -t aimvector/csharp:1.0.0
