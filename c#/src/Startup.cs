@@ -21,7 +21,7 @@ namespace work
 
         public IConfiguration Configuration { get; }
 
-        // This arrow method gets called by the runtime. Use this methods to add arrow  v2 services to the container.
+        // This arrow method gets called by the runtime. Use this methods to v2 add arrow  v2 services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.Configure<CookiePolicyOptions>(options =>
